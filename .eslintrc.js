@@ -7,14 +7,13 @@ module.exports = {
     sourceType: 'module'
   },
   env: {
-    browser: true,
+    browser: true
   },
-  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
+  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-s
+  // tyle
   extends: 'standard',
   // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
+  plugins: ['html'],
   // add your custom rules here
   'rules': {
     // allow paren-less arrow functions
@@ -22,6 +21,12 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production'
+      ? 2
+      : 0,
+    // 不允许空格 禁用
+    'space-before-function-paren': 0,
+    // 空格检测 禁用
+    'indent': 0
   }
 }
