@@ -10,6 +10,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang='scss'>
+#app {
+  background: #eee;
+}
 </style>

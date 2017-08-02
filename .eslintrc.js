@@ -27,6 +27,8 @@ module.exports = {
     // 不允许空格 禁用
     'space-before-function-paren': 0,
     // 空格检测 禁用
-    'indent': 0
+    'indent': 0,
+    // 分号 禁用
+    'semi': 0
   }
 }
