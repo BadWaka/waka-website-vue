@@ -2,8 +2,8 @@
   <div class="index">
     <!-- 头部 -->
     <m-header></m-header>
+    <!-- 轮播图 -->
     <swiper class="swiper" :options="swiperOption" ref="mySwiper">
-      <!-- 轮播图 -->
       <swiper-slide v-for="(carousel,index) in carousels" :key="index" class="swiperItem" :style="{backgroundImage:'url('+carousel.imgUrl+')'}"></swiper-slide>
       <!-- 分页器 -->
       <div class="swiper-pagination" slot="pagination"></div>
@@ -11,8 +11,14 @@
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
     </swiper>
-    <!-- 文章列表 -->
-    <article-list></article-list>
+    <!-- 下方 -->
+    <section class="bottom">
+      <!-- 文章列表 -->
+      <article-list></article-list>
+      <section class="right">
+  
+      </section>
+    </section>
   </div>
 </template>
 
@@ -66,10 +72,12 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: $headerHeight;
   box-sizing: border-box;
 
   .swiper {
-    width: 100%;
+    width: $containerWidth;
+    height: 300px;
     background: yellow;
 
     .swiperItem {
@@ -77,6 +85,16 @@ export default {
       height: 600px;
       background: no-repeat center;
       background-size: cover;
+    }
+  }
+
+  .bottom {
+    display: flex;
+
+    .right {
+      width: 320px;
+      height: 400px;
+      background: red;
     }
   }
 }

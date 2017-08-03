@@ -18,6 +18,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='scss'>
 @import '../../common/base.scss';
+@import '../../common/color.scss';
 .header {
     position: fixed;
     top: 0;
@@ -27,8 +28,10 @@ export default {
     display: flex;
     align-items: center;
     height: $headerHeight;
-    color: #fff;
-    background: #000;
+    color: $color1;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
 
     .title {
         margin-left: 24px;

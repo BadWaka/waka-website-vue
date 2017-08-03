@@ -33,7 +33,7 @@ export default {
     position: relative;
     margin-top: 20px;
     padding: 20px;
-    width: $containerWidth;
+    width: 640px;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     border-radius: 2px;
