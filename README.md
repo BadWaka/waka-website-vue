@@ -3,6 +3,7 @@
 > A Vue.js project
 
 waka的网站 使用vue
+我觉得个人网站还是需要SSR的
 
 ## 依赖库
 
