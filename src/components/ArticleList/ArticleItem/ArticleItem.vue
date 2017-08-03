@@ -22,8 +22,11 @@ export default {
 .articleItem {
     position: relative;
     margin-top: 20px;
+    padding: 20px;
     width: 800px;
     background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
 
     .title {
         font-size: 18px;
