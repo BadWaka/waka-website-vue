@@ -76,6 +76,7 @@ export default {
   box-sizing: border-box;
 
   .swiper {
+    margin-top: 20px;
     width: $containerWidth;
     height: 300px;
     background: yellow;
@@ -92,9 +93,13 @@ export default {
     display: flex;
 
     .right {
-      width: 320px;
+      margin: 20px 0 0 20px;
+      width: 300px;
       height: 400px;
       background: red;
+      background: #fff;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+      border-radius: 2px;
     }
   }
 }

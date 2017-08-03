@@ -31,7 +31,6 @@ export default {
     color: $color1;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-    border-radius: 2px;
 
     .title {
         margin-left: 24px;

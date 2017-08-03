@@ -32,7 +32,7 @@ export default {
 .articleItem {
     position: relative;
     margin-top: 20px;
-    padding: 20px;
+    padding: 40px;
     width: 640px;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
@@ -46,7 +46,7 @@ export default {
 
             .title {
                 display: inline-block;
-                color: $darkBlack;
+                color: $color1;
                 transition: 0.3s;
                 font-size: 18px;
                 font-weight: bold;
@@ -59,10 +59,12 @@ export default {
             }
 
             .desc {
-                color: $lightBlack;
-                margin-top: 10px;
+                max-height: 80px;
+                color: $color3;
+                margin-top: 20px;
                 font-size: 14px;
                 line-height: 20px;
+                overflow: hidden;
             }
         }
 
@@ -70,14 +72,14 @@ export default {
             flex-shrink: 0;
             margin-left: 20px;
             width: 160px;
-            height: 100px;
+            height: 120px;
             background: no-repeat center;
             background-size: cover;
         }
     }
 
     .row2 {
-        margin-top: 10px;
+        margin-top: 20px;
         display: flex;
 
         .tag {
