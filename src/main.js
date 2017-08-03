@@ -7,9 +7,11 @@ import './common/reset.css'; // 引入 reset.css
 
 // element-ui
 import {
-  Carousel
+  Carousel,
+  CarouselItem
 } from 'element-ui';
 Vue.use(Carousel);
+Vue.use(CarouselItem);
 
 Vue.config.productionTip = false;
 
