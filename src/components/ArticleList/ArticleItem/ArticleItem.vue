@@ -77,6 +77,7 @@ export default {
     }
 
     .row2 {
+        margin-top: 10px;
         display: flex;
 
         .tag {
