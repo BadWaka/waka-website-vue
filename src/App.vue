@@ -12,6 +12,7 @@ export default {
 
 <style lang='scss'>
 @import './common/color.scss';
+
 html,
 body {
   height: 100%;
@@ -19,6 +20,6 @@ body {
 
 #app {
   height: 100%;
-  background: $grey100;
+  background: $grey50;
 }
 </style>
