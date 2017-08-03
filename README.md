@@ -4,6 +4,14 @@
 
 waka的网站 使用vue
 
+## 依赖库
+
+### --save
+- element-ui UI框架
+- vue 核心
+- vue-awesome-swiper 轮播图
+- vue-router 路由
+
 ## Build Setup
 
 ``` bash

@@ -7,11 +7,11 @@ import './common/reset.css'; // 引入 reset.css
 
 // element-ui
 import {
-  Carousel,
-  CarouselItem
 } from 'element-ui';
-Vue.use(Carousel);
-Vue.use(CarouselItem);
+
+// 轮播图
+import VueAwesomeSwiper from 'vue-awesome-swiper';  
+Vue.use(VueAwesomeSwiper);
 
 Vue.config.productionTip = false;
 
