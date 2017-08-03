@@ -23,9 +23,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='scss'>
-@import '../../common/base.scss';
 .articleList {
-    padding-top: $headerHeight;
     display: flex;
     flex-direction: column;
     align-items: center;

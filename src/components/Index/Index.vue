@@ -1,7 +1,5 @@
 <template>
   <div class="index">
-    <!-- 头部 -->
-    <m-header></m-header>
     <!-- 文章列表 -->
     <article-list></article-list>
   </div>
