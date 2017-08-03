@@ -14,7 +14,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "node-sass": "^4.5.3",
+    "element-ui": "^1.4.1",
     "vue": "^2.3.3",
     "vue-router": "^2.6.0"
   },
@@ -64,6 +64,7 @@
     "lolex": "^1.5.2",
     "mocha": "^3.2.0",
     "nightwatch": "^0.9.12",
+    "node-sass": "^4.5.3",
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
