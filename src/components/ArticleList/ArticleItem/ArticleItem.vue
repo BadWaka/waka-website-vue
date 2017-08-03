@@ -26,13 +26,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='scss'>
+@import '../../../common/base.scss';
 @import '../../../common/color.scss';
 
 .articleItem {
     position: relative;
     margin-top: 20px;
     padding: 20px;
-    width: 800px;
+    width: $containerWidth;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     border-radius: 2px;
