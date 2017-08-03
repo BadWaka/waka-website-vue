@@ -5,6 +5,11 @@
     <swiper class="swiper" :options="swiperOption" ref="mySwiper">
       <!-- 轮播图 -->
       <swiper-slide v-for="(carousel,index) in carousels" :key="index" class="swiperItem" :style="{backgroundImage:'url('+carousel.imgUrl+')'}"></swiper-slide>
+      <!-- 分页器 -->
+      <div class="swiper-pagination" slot="pagination"></div>
+      <!-- 控制按钮 -->
+      <div class="swiper-button-prev" slot="button-prev"></div>
+      <div class="swiper-button-next" slot="button-next"></div>
     </swiper>
     <!-- 文章列表 -->
     <article-list></article-list>
@@ -23,7 +28,16 @@ export default {
   data() {
     return {
       title: '主页',
+      // 轮播图配置
       swiperOption: {
+        pagination: '.swiper-pagination', // 分页器
+        paginationClickable: true,  // 分页器点击
+        loop: true, // 无限循环
+        effect: 'fade', // 渐变
+        autoplay: 2500, // 自动播放
+        autoplayDisableOnInteraction: false,  // 用户操作之后不会停止 autoPlay
+        nextButton: '.swiper-button-next',  // 下一个按钮
+        prevButton: '.swiper-button-prev',  // 上一个按钮
       },
       carousels: [{
         imgUrl: 'http://img.hb.aicdn.com/b895d7c0a875555aa5ee717982eb3b4ef3e358c83ce3a-DbZSpf_fw658',
@@ -53,16 +67,14 @@ export default {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  padding-top: $headerHeight;
 
   .swiper {
-    margin-top: 20px;
-    width: $containerWidth;
+    width: 100%;
     background: yellow;
 
     .swiperItem {
       width: 100%;
-      height: 300px;
+      height: 600px;
       background: no-repeat center;
       background-size: cover;
     }
