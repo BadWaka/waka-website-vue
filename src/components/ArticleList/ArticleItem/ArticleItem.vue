@@ -1,5 +1,10 @@
 <template>
     <section class="articleItem">
+        <section class="row0">
+            <div class="avatarWrapper"></div>
+            <div class="author">作者名</div>
+            <div class="time">2017.08.03</div>
+        </section>
         <section class="row1">
             <section class="left">
                 <h2 class="title">标题</h2>
@@ -32,14 +37,41 @@ export default {
 .articleItem {
     position: relative;
     margin-top: 20px;
-    padding: 40px;
+    padding: 30px 40px;
     width: 640px;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     border-radius: 2px;
     box-sizing: border-box;
 
+    .row0 {
+        display: flex;
+        align-items: center;
+
+        .avatarWrapper {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #eee;
+            border-radius: 50%;
+            background: no-repeat center;
+            background-size: cover;
+        }
+
+        .author {
+            margin-left: 10px;
+            font-size: 12px;
+            color: $color2;
+        }
+
+        .time {
+            margin-left: 10px;
+            font-size: 12px;
+            color: $color3;
+        }
+    }
+
     .row1 {
+        margin-top: 20px;
         display: flex;
 
         .left {
