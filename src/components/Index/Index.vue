@@ -27,5 +27,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='scss'>
-
+.index {
+  height: 100%;
+}
 </style>
