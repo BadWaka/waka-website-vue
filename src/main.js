@@ -7,11 +7,9 @@ import './common/reset.css'; // 引入 reset.css
 
 // element-ui
 import {
-  Button,
-  InputNumber
+  Carousel
 } from 'element-ui';
-Vue.use(Button);
-Vue.use(InputNumber);
+Vue.use(Carousel);
 
 Vue.config.productionTip = false;
 

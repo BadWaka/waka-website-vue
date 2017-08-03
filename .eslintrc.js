@@ -29,6 +29,12 @@ module.exports = {
     // 空格检测 禁用
     'indent': 0,
     // 分号 禁用
-    'semi': 0
+    'semi': 0,
+    // 尾部逗号结尾 禁用
+    'comma-dangle': 0,
+    // 没有多行空格 禁用
+    'no-trailing-spaces': 0,
+    // 未使用的变量 禁用
+    'no-unused-vars': 0
   }
 }
